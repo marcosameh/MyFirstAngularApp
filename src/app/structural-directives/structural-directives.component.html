@@ -1,0 +1,24 @@
+<p>structural-directives works!</p>
+<!-- <div *ngIf="!IsloggedIn; then userBlock ;else currenUserBlock;">
+
+</div>
+
+<ng-template #currenUserBlock>
+<h1> hallo {{name}}</h1>
+</ng-template> -->
+
+<!-- <ng-template #userBlock>
+    <h1> Hallo User</h1>
+    </ng-template>
+
+    <div *ngIf="IsloggedIn else userBlock">
+        <h1> hallo {{name}}</h1>
+    </div> -->
+
+<div [ngSwitch]="Degree">
+ <h1 *ngSwitchCase="'80'"> B</h1>
+ <h1 *ngSwitchCase="'90'"> A</h1>
+ <h1 *ngSwitchDefault> F</h1>
+
+
+ </div>
